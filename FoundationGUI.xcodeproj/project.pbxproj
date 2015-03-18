@@ -13,6 +13,9 @@
 		CBBDDF2F1AB993230086A7E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBDDF2E1AB993230086A7E7 /* Images.xcassets */; };
 		CBBDDF321AB993230086A7E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBDDF301AB993230086A7E7 /* Main.storyboard */; };
 		CBBDDF3E1AB993230086A7E7 /* FoundationGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBDDF3D1AB993230086A7E7 /* FoundationGUITests.m */; };
+		CBBDDF4E1AB9933C0086A7E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBDDF4D1AB9933C0086A7E7 /* main.m */; };
+		CBBDDF551AB994B40086A7E7 /* foundationtool in CopyFiles */ = {isa = PBXBuildFile; fileRef = CBBDDF4B1AB9933C0086A7E7 /* foundationtool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CBBDDF571AB99D1E0086A7E7 /* lipsum.txt in Resources */ = {isa = PBXBuildFile; fileRef = CBBDDF561AB99D1E0086A7E7 /* lipsum.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,36 @@
 			remoteGlobalIDString = CBBDDF201AB993230086A7E7;
 			remoteInfo = FoundationGUI;
 		};
+		CBBDDF521AB994990086A7E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBBDDF191AB993230086A7E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBBDDF4A1AB9933C0086A7E7;
+			remoteInfo = foundationtool;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBBDDF491AB9933C0086A7E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CBBDDF541AB994A60086A7E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				CBBDDF551AB994B40086A7E7 /* foundationtool in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CBBDDF211AB993230086A7E7 /* FoundationGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +70,9 @@
 		CBBDDF371AB993230086A7E7 /* FoundationGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBDDF3C1AB993230086A7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBBDDF3D1AB993230086A7E7 /* FoundationGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationGUITests.m; sourceTree = "<group>"; };
+		CBBDDF4B1AB9933C0086A7E7 /* foundationtool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = foundationtool; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBDDF4D1AB9933C0086A7E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBBDDF561AB99D1E0086A7E7 /* lipsum.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lipsum.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +90,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBBDDF481AB9933C0086A7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +105,7 @@
 			children = (
 				CBBDDF231AB993230086A7E7 /* FoundationGUI */,
 				CBBDDF3A1AB993230086A7E7 /* FoundationGUITests */,
+				CBBDDF4C1AB9933C0086A7E7 /* foundationtool */,
 				CBBDDF221AB993230086A7E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +115,7 @@
 			children = (
 				CBBDDF211AB993230086A7E7 /* FoundationGUI.app */,
 				CBBDDF371AB993230086A7E7 /* FoundationGUITests.xctest */,
+				CBBDDF4B1AB9933C0086A7E7 /* foundationtool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +129,7 @@
 				CBBDDF2C1AB993230086A7E7 /* ViewController.m */,
 				CBBDDF2E1AB993230086A7E7 /* Images.xcassets */,
 				CBBDDF301AB993230086A7E7 /* Main.storyboard */,
+				CBBDDF561AB99D1E0086A7E7 /* lipsum.txt */,
 				CBBDDF241AB993230086A7E7 /* Supporting Files */,
 			);
 			path = FoundationGUI;
@@ -116,6 +161,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CBBDDF4C1AB9933C0086A7E7 /* foundationtool */ = {
+			isa = PBXGroup;
+			children = (
+				CBBDDF4D1AB9933C0086A7E7 /* main.m */,
+			);
+			path = foundationtool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,10 +179,12 @@
 				CBBDDF1D1AB993230086A7E7 /* Sources */,
 				CBBDDF1E1AB993230086A7E7 /* Frameworks */,
 				CBBDDF1F1AB993230086A7E7 /* Resources */,
+				CBBDDF541AB994A60086A7E7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBBDDF531AB994990086A7E7 /* PBXTargetDependency */,
 			);
 			name = FoundationGUI;
 			productName = FoundationGUI;
@@ -154,6 +209,23 @@
 			productReference = CBBDDF371AB993230086A7E7 /* FoundationGUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CBBDDF4A1AB9933C0086A7E7 /* foundationtool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBBDDF4F1AB9933C0086A7E7 /* Build configuration list for PBXNativeTarget "foundationtool" */;
+			buildPhases = (
+				CBBDDF471AB9933C0086A7E7 /* Sources */,
+				CBBDDF481AB9933C0086A7E7 /* Frameworks */,
+				CBBDDF491AB9933C0086A7E7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = foundationtool;
+			productName = foundationtool;
+			productReference = CBBDDF4B1AB9933C0086A7E7 /* foundationtool */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +241,9 @@
 					CBBDDF361AB993230086A7E7 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = CBBDDF201AB993230086A7E7;
+					};
+					CBBDDF4A1AB9933C0086A7E7 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -187,6 +262,7 @@
 			targets = (
 				CBBDDF201AB993230086A7E7 /* FoundationGUI */,
 				CBBDDF361AB993230086A7E7 /* FoundationGUITests */,
+				CBBDDF4A1AB9933C0086A7E7 /* foundationtool */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBDDF2F1AB993230086A7E7 /* Images.xcassets in Resources */,
+				CBBDDF571AB99D1E0086A7E7 /* lipsum.txt in Resources */,
 				CBBDDF321AB993230086A7E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +306,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBBDDF471AB9933C0086A7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBDDF4E1AB9933C0086A7E7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +321,11 @@
 			isa = PBXTargetDependency;
 			target = CBBDDF201AB993230086A7E7 /* FoundationGUI */;
 			targetProxy = CBBDDF381AB993230086A7E7 /* PBXContainerItemProxy */;
+		};
+		CBBDDF531AB994990086A7E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBBDDF4A1AB9933C0086A7E7 /* foundationtool */;
+			targetProxy = CBBDDF521AB994990086A7E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -385,6 +475,24 @@
 			};
 			name = Release;
 		};
+		CBBDDF501AB9933C0086A7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBBDDF511AB9933C0086A7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +518,14 @@
 			buildConfigurations = (
 				CBBDDF451AB993230086A7E7 /* Debug */,
 				CBBDDF461AB993230086A7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBBDDF4F1AB9933C0086A7E7 /* Build configuration list for PBXNativeTarget "foundationtool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBBDDF501AB9933C0086A7E7 /* Debug */,
+				CBBDDF511AB9933C0086A7E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

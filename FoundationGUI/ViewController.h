@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
+@property (weak) IBOutlet NSTextField *input;
+@property (unsafe_unretained) IBOutlet NSTextView *output;
 
 
 @end
